@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Code') {
+            steps {
+                echo 'Coding'
+            }
+        }
+        stage('Jenkins') {
+            steps {
+                echo 'Jenkins Pipeline'
+            }
+        }
+        stage('Thank you') {
+            steps {
+                echo 'Bye bye'
+            }
+        }
+        
+    }
+}
